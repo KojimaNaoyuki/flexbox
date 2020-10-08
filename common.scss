@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-color: black;
+    p {
+        margin: 0;
+    }
+}
+
+.f {
+    &-container {
+        display: flex; //親要素につける
+
+        //コンテナ(親要素)につけられる
+            // flex-direction: row; //アイテムを水平方向に左　→　右
+            // flex-direction: row-reverse;　//アイテムを水平方向に右　→　左
+            // flex-direction: column; //アイテムを垂直方向に上　→　下
+            // flex-direction: column-reverse; //アイテムを垂直方向に下　→　上
+
+            // flex-wrap: nowrap; //アイテムを折り返さず一列表示
+            // flex-wrap: wrap; //アイテムを折り返す
+            // flex-wrap: wrap-reverse; //アイテムを折り返して下から上に並べる
+
+            // justify-content: flex-start; //アイテムを左揃えで表示
+            // justify-content: flex-end; //アイテムを右揃えで表示
+            // justify-content: center; //アイテムを左右中央揃えで表示
+            // justify-content: space-between; //両端のアイテムは余白を空けずに、他の要素は均等に間隔を空ける
+            // justify-content: space-around; //両端のアイテムも含めて均等に間隔を空ける
+
+            //などなど
+
+    }
+    &-item {
+        margin: 20px;
+        width: 100px;
+        height: 50px;
+        border: solid 1px white;
+        background-color: brown;
+
+        //アイテム(子要素)につけられる
+            // order: 1; //htmlの記述によらず要素の並び順を指定できる
+            // flex-grow: 3; //アイテムの伸び率を指定できる
+
+            //などなど
+
+        p {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+        }
+    }
+}
